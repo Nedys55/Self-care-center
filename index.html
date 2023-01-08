@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Police -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+    <title> Self-Care Center </title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Titres -->
+      <h1>&#10024; Self-Care Center &#10024;</h1>
+      <h2> Which type of message?</h2>
+      
+      <!-- Choix Affirmation / Mantra -->
+      <div class="box-choix">
+        <div class="choix">
+
+          <form class="radio-form">
+
+            <div class="radio-button">
+              <div>
+                <input type="radio" name="question-type" id="affirmation">
+                <label for="affirmation">Affirmation</label>
+              </div>
+  
+              <div>
+                <input type="radio" name="question-type" id="mantra">
+                <label for="mantra">Mantra</label>
+              </div>
+            </div>
+          </form>
+              
+          <div class="receive-button">
+            <button id="receive-message" type="submit"> Receive Message</button>
+          </div>
+
+          <div class="clear-button">
+              <button id="clear"> Clear Message</button>
+          </div>
+
+        </div>
+
+      </div>
+      
+      <!-- Massage Box -->
+      <div class="message-box">
+        <div class="message">
+          <img class="image-zen" src="assets/meditate.svg" alt="zen image">
+          <p class='text hidden' id='randomMessage'>Please select an input!</p>
+        </div>
+      </div>
+
+    </div>
+  
+    <script src="main.js"></script>
+  </body>
+</html>
